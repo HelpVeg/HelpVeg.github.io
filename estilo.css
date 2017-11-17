@@ -7,3 +7,41 @@
 	background: #5bf946;
 	border:1px solid #36ae26;
 }
+
+/*----------MENU-----------*/
+.img-logo{
+	margin-top:-7px;
+	margin-bottom: -7px;
+	margin-left: -3px;
+	width: 40px;
+	height: 35px;
+}
+
+/*---------HOME-------------*/
+.home-img{
+	width: 100%;
+	height: 637px;
+}
+/*--------PROTOTIPO--------*/
+.proto-img{ 
+	width: 465px;
+	height: 265px;
+	margin-top: -50px;
+}
+.proto-text{
+	margin-top: 70px;
+}
+.proto-link a{
+	color: #000;
+	font-size: 30px;
+	text-decoration: none;
+}
+.proto-link a:hover{
+	color: green;
+}
+/*--------QUEM-SOMOS-------*/
+.github-dev{
+	width: 40px;
+	height: 40px;
+	margin-left: 117px;
+}
