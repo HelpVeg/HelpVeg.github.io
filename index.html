@@ -23,7 +23,9 @@
 
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-           <a class="navbar-brand" href="index.html">HelpVeg</a>
+            <a class="navbar-brand" href="index.html">
+              HelpVeg
+            </a>
           </div>
 
           <div class="collapse navbar-collapse" id="barra-navegacao">
@@ -32,7 +34,9 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="prototipo.html">Protótipo</a></li>
               <li><a href="uml.html">UML</a></li>
+              <li><a href="atividades.html">Atividades</a></li>
               <li><a href="quem-somos.html">Quem somos</a></li>
+              <li><a target="_blank" href="https://github.com/HelpVeg/HelpVegApp"><img class="img-logo" src="img/icons/github-logo.png"></a></li>
             </ul>
           </div>
 
@@ -40,17 +44,53 @@
     </nav>
 
     <div class="container">
-      <div class="page-header">
-        <h1 style="margin-top: 110px">HelpVeg</h1>
-      </div>
-    </div>
+      
+      <div id="carousel" class="carousel slide fadeing">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"> </li>
+          <li data-target="#carousel" data-slide-to="1"> </li>
+          <li data-target="#carousel" data-slide-to="2"> </li>
+          <li data-target="#carousel" data-slide-to="3"> </li>
+          <li data-target="#carousel" data-slide-to="4"> </li>
+        </ol>
 
-    <div class="container">
-      <p>
-      	Site em desenvolvimento...
-      </p>
-    </div>
+        <div class="carousel-inner" role="listbox">
 
+          <div class="item active">
+            <img src="img/slide1.png">
+          </div>
+          <div class="item">
+            <img src="img/slide2.png">
+          </div>
+
+          <div class="item">
+            <img src="img/slide3.png">
+          </div>
+
+          <div class="item">
+            <img src="img/slide4.png">
+          </div>
+
+          <div class="item">
+            <img src="img/slide5.png">
+          </div>
+
+        </div><!-- Carousel inner -->
+
+        <a href="#carousel" class="left carousel-control" data-slide="prev">
+          i.<span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#carousel" class="right carousel-control" data-slide="next">
+          i.<span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+        <div class="inner-top-bg">
+          
+        </div>
+
+      </div><!--Carousel slide-->
+
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
