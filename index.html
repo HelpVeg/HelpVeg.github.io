@@ -1,101 +1,272 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+    <head>
 
-    <link rel="icon" type="image/png" href="img/icons/icon.png" />
-    <title>HelpVeg - Seja bem vindo!</title>
+        <link rel="icon" type="image/png" href="assets/images/icon.png" />
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+        <title>HelpVeg</title>
 
-  </head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <body>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-    <!-- Barra de Navegação -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
 
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <a class="navbar-brand" href="index.html">
-              HelpVeg
-            </a>
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+        <!-- Scroll -->
+        <script src="assets/js/scroll.js"></script>
+
+    </head>
+    <body data-spy="scroll" data-target="#navbar-example">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top menu" id="navbar-example">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand scroll" href="#home">HelpVeg</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right"">
+                    <li class="active"><a class="scroll" href="#home">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a class="scroll" href="#projeto">Projeto</a></li>
+                    <li><a class="scroll" href="#prototipo">Protótipo</a></li>
+                    <li><a class="scroll" href="#quem_somos">Quem somos</a></li>
+                    <li class="dropdown">
+                      <a href="uml.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">UML<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="uml.html#classes">Diagrama de Classes</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="uml.html#sequencia">Diagrama de Sequência</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="uml.html#uso">Diagrama de Casos de Uso</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="uml.html#atividade">Diagrama de Atividade</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="uml.html#pacotes">Diagrama de Pacotes</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="entregas.html">Entregas</a></li>
+                    <li><a href="https://github.com/HelpVeg/HelpVegApp" target="_blank">GitHub</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <!-- HOME -->
+        <section class="container-fluid content-carousel" id="home">
+            <div style="padding: 0;margin: 0" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img style="width: 100%; height: 100vh" src="assets/images/carousel/carousel1.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <img style="width: 100%; height: 100vh" src="assets/images/carousel/carousel2.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <img style="width: 100%; height: 100vh" src="assets/images/carousel/carousel3.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <img style="width: 100%; height: 100vh" src="assets/images/carousel/carousel4.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <img style="width: 100%; height: 100vh" src="assets/images/carousel/carousel5.jpg" alt="...">
+                  <!--
+                  <div class="carousel-caption">
+                    <h3>Quinta etiqueta</h3>
+                    <p>legenda da quinta etiqueta vem aqui.</p>
+                  </div>
+                    -->
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </section>
+
+        <!-- PROJETO -->
+
+        <section class="container-fluid text-center" id="projeto">
+          <div class="page-header title-page">
+            <h3>O Projeto</h3>
+          </div>
+          <div class="row" style="vertical-align: middle;">
+
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail box">
+                <img src="assets/images/projeto/store.png" alt="..." class="img-rounded img-responsive img-project">
+                <div class="caption">
+                  <h3>Encontre restaurantes fantásticos!</h3>
+                  <p>Com o HelpVeg você pode conhecer novos restaurantes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail box">
+                <img src="assets/images/projeto/route.png" alt="..." class="img-rounded img-responsive img-project">
+                <div class="caption">
+                  <h3>Como chegar até o Restaurante</h3>
+                  <p>O HelpVeg ajuda você a chegar no seu restaurante favorito.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail box">
+                <img src="assets/images/projeto/apple.png" alt="..." class="img-rounded img-responsive img-project">
+                <div class="caption">
+                  <h3>Comida Vegana e Vegetariana</h3>
+                  <p>Restaurantes que possuem em seu cardápio comidas veganas e vegetarianas.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail box">
+                <img src="assets/images/projeto/salad.png" alt="..." class="img-rounded img-responsive img-project">
+                <div class="caption">
+                  <h3>Experimente pratos incríveis</h3>
+                  <p>Você poderá experimentar inúmeros pratos veganos e vegetarianos incríveis.</p>
+                </div>
+              </div>
+            </div>
+            
           </div>
 
-          <div class="collapse navbar-collapse" id="barra-navegacao">
+          <div class="row" style="vertical-align: middle;">
 
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="prototipo.html">Protótipo</a></li>
-              <li><a href="uml.html">UML</a></li>
-              <li><a href="atividades.html">Atividades</a></li>
-              <li><a href="quem-somos.html">Quem somos</a></li>
-              <li><a target="_blank" href="https://github.com/HelpVeg/HelpVegApp"><img class="img-logo" src="img/icons/github-logo.png"></a></li>
-            </ul>
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail box">
+                <img src="assets/images/projeto/chat.png" alt="..." class="img-rounded img-responsive img-project">
+                <div class="caption">
+                  <h3>Veja o que todos estão falando</h3>
+                  <p>Saiba através do chat e comentários o que todos estão comentando sobre restaurantes e pratos.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail box">
+                <img src="assets/images/projeto/rating.png" alt="..." class="img-rounded img-responsive img-project">
+                <div class="caption">
+                  <h3>Faça sua avaliação</h3>
+                  <p>Você pode avaliar um restaurante e contribuir com sua experiência para outras pessoas.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail box">
+                <img src="assets/images/projeto/list.png" alt="..." class="img-rounded img-responsive img-project">
+                <div class="caption">
+                  <h3>Veja sua lista de restaurantes</h3>
+                  <p>Reveja quais restaurantes você já visitou e avaliou.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="thumbnail box">
+                <img src="assets/images/projeto/health-care.png" alt="..." class="img-rounded img-responsive img-project">
+                <div class="caption">
+                  <h3>Receba dicas para sua saúde</h3>
+                  <p>Receba dicas de alimentação para manter seu corpo sempre saudável.</p>
+                </div>
+              </div>
+            </div>
+            
           </div>
+        </section>
 
-      </div>
-    </nav>
+        <hr class="featurette-divider">
 
-    <div class="container">
-      
-      <div id="carousel" class="carousel slide fadeing">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel" data-slide-to="0" class="active"> </li>
-          <li data-target="#carousel" data-slide-to="1"> </li>
-          <li data-target="#carousel" data-slide-to="2"> </li>
-          <li data-target="#carousel" data-slide-to="3"> </li>
-          <li data-target="#carousel" data-slide-to="4"> </li>
-        </ol>
+        <!-- PROTOTIPO -->
+        <section class="container-fluid text-center" id="prototipo">
+            <div class="page-header title-page">
+              <h3>Protótipo</h3>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <iframe src="https://marvelapp.com/1136jjdg?emb=1" style="width: 100%; height: 73vh;" allowTransparency="true" frameborder="0"></iframe>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <img src="assets/images/proto.jpg" style="width: 100%; height: 73vh;" class="img-responsive">
+            </div>
+        </section>
 
-        <div class="carousel-inner" role="listbox">
-
-          <div class="item active">
-            <img src="img/slide1.jpg">
+        <hr class="featurette-divider">
+        
+        <section class="container-fluid text-center" id="quem_somos">
+          <div class="page-header title-page">
+            <h3>Quem somos</h3>
           </div>
-          <div class="item">
-            <img src="img/slide2.jpg">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="thumbnail box">
+                <img src="assets/images/jmonte.jpeg" alt="José Monte Junior" class="img-circle img-responsive">
+                <div class="capiton">
+                  <h3 class="text-dev">José Monte Júnior</h3>
+                  <p class="text-dev">Estudante de Sistemas de Informação - UFRPE</p>
+                  <a target="_blank" href="https://github.com/jmontejr"><img class="github-dev" src="assets/images/github-logo-black.png"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="thumbnail box">
+                <img src="assets/images/misabel.jpeg" alt="Maria Isabel" class="img-circle img-responsive">
+                <div class="capiton">
+                  <h3 class="text-dev">Maria Isabel</h3>
+                  <p class="text-dev">Estudante de Sistemas de Informação - UFRPE</p>
+                  <a target="_blank" href="https://github.com/belcsantiago"><img class="github-dev" src="assets/images/github-logo-black.png"></a>
+                </div>       
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="thumbnail box">
+                <img src="assets/images/kraphael.jpeg" alt="Keyson Raphael" class="img-circle img-responsive">
+                <div class="capiton">
+                  <h3 class="text-dev">Keyson Raphael</h3>
+                  <p class="text-dev">Estudante de Sistemas de Informação - UFRPE</p>
+                  <a target="_blank" href="https://github.com/KeysonRaphael"><img class="github-dev" src="assets/images/github-logo-black.png"></a>
+                </div>   
+              </div>
+            </div>
           </div>
+        </section>
 
-          <div class="item">
-            <img src="img/slide3.jpg">
-          </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-          <div class="item">
-            <img src="img/slide4.jpg">
-          </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-          <div class="item">
-            <img src="img/slide5.jpg">
-          </div>
-
-        </div><!-- Carousel inner -->
-
-        <a href="#carousel" class="left carousel-control" data-slide="prev">
-          i.<span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a href="#carousel" class="right carousel-control" data-slide="next">
-          i.<span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-
-        <div class="inner-top-bg">
-          
-        </div>
-
-      </div><!--Carousel slide-->
-
-    </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" crossorigin="anonymous"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-
-  </body>
+    </body>
 </html>
